@@ -37,6 +37,8 @@ class ViewController: UIViewController {
             
             chartDataSet.lineWidth = 5.0 // グラフの線の太さを変更
             chartDataSet.mode = .cubicBezier // 滑らかなグラフの曲線にする
+            chartDataSet.colors = [.systemBlue] // グラフの線の色を変更
+            chartDataSet.circleColors = [.systemRed] // グラフのデータポイントの色を変更
             
             chartView.data = LineChartData(dataSet: chartDataSet)
             
